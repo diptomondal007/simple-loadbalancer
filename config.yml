@@ -1,0 +1,19 @@
+hosts:
+  - host: www.golumolu.com
+    servers:
+      - localhost:8081
+      - localhost:8082
+  - host: www.hello.com
+    servers:
+      - localhost:9081
+      - localhost:9082
+
+paths:
+  - path: /golumolu
+    servers:
+      - localhost:8081
+      - localhost:8082
+  - path: /hello
+    servers:
+      - localhost:9081
+      - localhost:9082
