@@ -26,7 +26,7 @@ def router():
 
 
 @loadbalancer.route('/<path>')
-def mango_path(path):
+def router_path(path):
     for entry in config['paths']:
         if ('/' + path) == entry['path']:
             response = requests.get(f'http://{random.choice(entry["servers"])}')
